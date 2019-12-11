@@ -10,7 +10,10 @@
 int
 sys_fork(void)
 {
-  return fork();
+  int dadPid = pid;
+  int pidChild = fork();
+
+  return 
 }
 
 int
@@ -89,3 +92,19 @@ sys_uptime(void)
   release(&tickslock);
   return xticks;
 }
+
+//my implimentation
+int
+sys_getChildren(void)
+{
+  return 120;
+}
+
+
+
+
+
+
+
+
+
