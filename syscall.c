@@ -139,6 +139,8 @@ syscall(void)
   num = curproc->tf->eax;
   if(num > 0 && num < NELEM(syscalls) && syscalls[num]) {
     curproc->tf->eax = syscalls[num]();
+    myproc()->usage[myproc()->usagepointer]=num; // we have an array include all of the usage of another process 
+    myproc()->usagepointer++;//add to config the head of array
   } else {
     cprintf("%d %s: unknown sys call %d\n",
             curproc->pid, curproc->name, num);
