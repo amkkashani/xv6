@@ -7,13 +7,29 @@
 #include "mmu.h"
 #include "proc.h"
 
+int table[1200][256] ={0};
+
+int
+sys_getpid(void)
+{
+  return myproc()->pid;
+}
+
+
+
 int
 sys_fork(void)
 {
-  int dadPid = pid;
+  int dadPid = sys_getpid();
   int pidChild = fork();
-
-  return 
+  //cprintf("father : %d child : %d",dadPid , pidChild);
+  for(int i =0;i<256;i++){
+    if(table[dadPid][i]==0){
+      table[dadPid][i]=pidChild;
+      break;
+    }
+  }
+  return pidChild;
 }
 
 int
@@ -39,11 +55,7 @@ sys_kill(void)
   return kill(pid);
 }
 
-int
-sys_getpid(void)
-{
-  return myproc()->pid;
-}
+
 
 int
 sys_sbrk(void)
@@ -95,9 +107,21 @@ sys_uptime(void)
 
 //my implimentation
 int
-sys_getChildren(void)
+sys_getChildren(int prosecId)
 {
-  return 120;
+  int result=0;
+  argint(0,&prosecId);
+  int j=0;
+  while(table[prosecId][j]!=0){
+     int temp = table[prosecId][j];
+     while(temp>0){
+       temp/=10;
+       result*=10;
+     }
+     result+=table[prosecId][j];
+     j++;
+  }
+  return result;
 }
 
 
