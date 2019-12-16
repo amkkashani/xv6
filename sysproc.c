@@ -125,6 +125,19 @@ sys_getChildren(int prosecId)
 }
 
 
+//question 2
+int
+sys_getCount(int find){
+  argint(0,&find);
+  int counter =0;
+  for(int i=0;i<=myproc()->usagepointer;i++){
+    if(myproc()->usage[i]==find){
+      counter++;
+    }
+  }
+  return counter;
+}
+
 
 
 
