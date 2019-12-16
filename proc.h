@@ -39,6 +39,7 @@ struct proc {
   int usagepointer;
   int usage[100];
   int priority;
+  int calculatedPriority;
   uint sz;                     // Size of process memory (bytes)
   pde_t* pgdir;                // Page table
   char *kstack;                // Bottom of kernel stack for this process

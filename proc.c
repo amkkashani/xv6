@@ -324,6 +324,7 @@ scheduler(void)
 {
   struct proc *p;
   struct cpu *c = mycpu();
+  struct proc *p1;
   c->proc = 0;
   
   for(;;){
@@ -336,6 +337,23 @@ scheduler(void)
       if(p->state != RUNNABLE)
         continue;
 
+      //choose highest priority 
+      struct proc* minimum = ptable.proc ;
+      for(p1 = ptable.proc ; p1 <&ptable.proc[NPROC];p1++){
+        if(p1->state != RUNNABLE){
+          continue;
+        }
+        if(minimum->calculatedPriority > (p1->calculatedPriority)){
+          minimum = p1; 
+        }
+      }
+      minimum-> calculatedPriority += minimum ->priority;
+      
+      //for controling larg int and destroy negative priority
+      if(minimum->calculatedPriority<0){
+        minimum->calculatedPriority = 0;
+      }
+      p = minimum;
       // Switch to chosen process.  It is the process's job
       // to release ptable.lock and then reacquire it
       // before jumping back to us.
