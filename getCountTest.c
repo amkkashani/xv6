@@ -7,9 +7,7 @@ main(int argc,char **argv)
 {
   int a = 4;
   getChildren(a);
-  getChildren(a);
-  int test = readcommand (0, command, args);
-  printf("i find this %d",test);	
+  getChildren(a);	
   int result = getCount(22);
   printf(1,"--- %d ---",result);
   exit();
