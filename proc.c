@@ -322,6 +322,7 @@ wait(void)
 void
 scheduler(void)
 {
+  extern int cpuMode;
   struct proc *p;
   struct cpu *c = mycpu();
   struct proc *p1;

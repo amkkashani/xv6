@@ -11,6 +11,7 @@
 // Interrupt descriptor table (shared by all CPUs).
 struct gatedesc idt[256];
 extern uint vectors[];  // in vectors.S: array of 256 entry pointers
+extern int cpuMode; // kashani
 struct spinlock tickslock;
 uint ticks;
 int currentQuantom ; //show us how many quantom passed in this procces 

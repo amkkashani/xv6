@@ -12,7 +12,7 @@ struct cpu {
 
 extern struct cpu cpus[NCPU];
 extern int ncpu;
-extern int cpuMode;// this field show how schedule system use
+int cpuMode;// this field show how schedule system use
 
 
 //PAGEBREAK: 17

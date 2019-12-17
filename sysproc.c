@@ -140,7 +140,7 @@ sys_getCount(int find){
 
 //3.2
 int
-changePriority(int newPriority){
+sys_changePriority(int newPriority){
   argint(0,&newPriority);
   if(newPriority > 5 || newPriority < 0){
     return -1;
