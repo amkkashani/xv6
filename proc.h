@@ -12,6 +12,8 @@ struct cpu {
 
 extern struct cpu cpus[NCPU];
 extern int ncpu;
+extern int cpuMode;// this field show how schedule system use
+
 
 //PAGEBREAK: 17
 // Saved registers for kernel context switches.

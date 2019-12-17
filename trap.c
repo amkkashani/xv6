@@ -105,7 +105,7 @@ trap(struct trapframe *tf)
   currentQuantom++;
   if(myproc() && myproc()->state == RUNNING &&
      tf->trapno == T_IRQ0+IRQ_TIMER &&
-     currentQuantom%QUANTUM==0)
+     (currentQuantom%QUANTUM==0 || cpuMode!= 1) )
     yield();
 
   // Check if the process has been killed since we yielded
