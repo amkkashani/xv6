@@ -271,6 +271,7 @@ exit(void)
 
   // Jump into the scheduler, never to return.
   curproc->state = ZOMBIE;
+  curproc->timeHandeler.terminationTime = ticks;
   sched();
   panic("zombie exit");
 }
@@ -558,4 +559,22 @@ procdump(void)
     }
     cprintf("\n");
   }
+}
+
+void
+clockCounter(){
+  struct proc* p;
+
+  acquire(&ptable.lock);
+    for(p = ptable.proc; p < &ptable.proc[NPROC]; p++){
+        if(p->state == SLEEPING){
+          p->timeHandeler.sleepingTime++;
+        }else if(p->state == RUNNABLE){
+          p->timeHandeler.runningTime++;
+        }
+        else if(p->state ==RUNNING ){
+          p->timeHandeler.runningTime++;
+        }
+    }
+    release(&ptable.lock);
 }
