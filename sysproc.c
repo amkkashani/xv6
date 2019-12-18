@@ -8,7 +8,7 @@
 #include "proc.h"
 
 int table[1200][256] ={0};
-
+extern int cpuMode;
 int
 sys_getpid(void)
 {
@@ -150,6 +150,18 @@ sys_changePriority(int newPriority){
 
 
   return 5;
+}
+
+//3.3
+int
+sys_changePolicy(int mode){
+  argint(0,&mode);
+  if(mode>2 || mode<0){
+    return -1;
+  }
+  cprintf("%d",cpuMode);
+  cpuMode = mode;
+  return 1;
 }
 
 

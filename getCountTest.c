@@ -10,5 +10,9 @@ main(int argc,char **argv)
   getChildren(a);	
   int result = getCount(22);
   printf(1,"--- %d ---",result);
-  exit();
+  //this code for test of 3.3
+  /*
+  changePolicy(1);
+  changePolicy(2);
+  exit();*/
 }

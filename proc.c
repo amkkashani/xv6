@@ -111,6 +111,14 @@ found:
   p->context = (struct context*)sp;
   memset(p->context, 0, sizeof *p->context);
   p->context->eip = (uint)forkret;
+  
+
+  //kashaia
+  p->timeHandeler.creationTime = ticks;
+  p ->timeHandeler.runningTime =0;
+  p->timeHandeler.sleepingTime = 0 ;
+  p->timeHandeler.readyTime = 0;
+  
 
   return p;
 }

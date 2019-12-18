@@ -34,10 +34,20 @@ struct context {
   uint eip;
 };
 
+struct timeVariables{//this struct for 3.4
+  int creationTime;
+  int terminationTime; 
+  int sleepingTime; 
+  int readyTime; 
+  int runningTime;
+  }; 
+
+
 enum procstate { UNUSED, EMBRYO, SLEEPING, RUNNABLE, RUNNING, ZOMBIE };
 
 // Per-process state
 struct proc {
+  struct timeVariables timeHandeler;
   int usagepointer;
   int usage[100];
   int priority;
