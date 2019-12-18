@@ -1,7 +1,6 @@
 #include "types.h"
 #include "stat.h"
 #include "user.h"
- 
 int
 main(int argc,char **argv)
 {
@@ -13,6 +12,10 @@ main(int argc,char **argv)
   //this code for test of 3.3
   /*
   changePolicy(1);
-  changePolicy(2);
-  exit();*/
+  changePolicy(2);*/
+
+  //for 3.4
+  //struct timeVariables * test;
+ // waitForChild();
+  exit();
 }

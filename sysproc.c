@@ -164,6 +164,16 @@ sys_changePolicy(int mode){
   return 1;
 }
 
+//3.4
+int
+sys_waitForChild(void){
+  struct timeVariables *ct;
+  argptr (0 , (void*)&ct ,sizeof(*ct));
+  waitForChild(ct);
+  cprintf("%d",ct->readyTime);
+  return 1;
+}
+
 
 
 
