@@ -37,7 +37,7 @@ idtinit(void)
 void
 trap(struct trapframe *tf)
 {
-  clockCounter();
+  
   if(tf->trapno == T_SYSCALL){
     if(myproc()->killed)
       exit();
@@ -52,6 +52,7 @@ trap(struct trapframe *tf)
     if(cpuid() == 0){
       acquire(&tickslock);
       ticks++;
+      clockCounter();
       wakeup(&ticks);
       release(&tickslock);
     }
@@ -105,8 +106,8 @@ trap(struct trapframe *tf)
   // If interrupts were on while locks held, would need to check nlock.
   currentQuantom++;
   if(myproc() && myproc()->state == RUNNING &&
-     tf->trapno == T_IRQ0+IRQ_TIMER &&
-     (currentQuantom%QUANTUM==0 || cpuMode!= 1) )
+     tf->trapno == T_IRQ0+IRQ_TIMER /*&&
+     (currentQuantom%QUANTUM==0 || cpuMode!= 1)*/ )
     yield();
 
   // Check if the process has been killed since we yielded

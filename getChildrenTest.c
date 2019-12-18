@@ -5,9 +5,11 @@ int
 main(int argc,char **argv)
 {
   int a= fork();
+        
   fork();
   fork();
   fork();
+
   wait();
   wait();
   wait();

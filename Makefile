@@ -185,6 +185,7 @@ UPROGS=\
 	_zombie\
 	_getChildrenTest\
 	_getCountTest\
+	_OriginalSchedTest\
 
 fs.img: mkfs README $(UPROGS)
 	./mkfs fs.img README $(UPROGS)

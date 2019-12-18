@@ -1,6 +1,13 @@
 struct stat;
 struct rtcdate;
-struct timeVariables;
+struct timeVariables{//this struct for 3.4
+  int creationTime;
+  int terminationTime; 
+  int sleepingTime; 
+  int readyTime; 
+  int runningTime;
+  }; 
+
 // system calls
 int fork(void);
 int exit(void) __attribute__((noreturn));
