@@ -1,0 +1,187 @@
+quantom 10:
+childe cbt = 797 , turnAroundtime = 797 , waiting time 0 
+
+childe cbt = 633 , turnAroundtime = 633 , waiting time 0 
+
+childe cbt = 631 , turnAroundtime = 631 , waiting time 0 
+
+childe cbt = 877 , turnAroundtime = 883 , waiting time 0 
+
+childe cbt = 674 , turnAroundtime = 674 , waiting time 0 
+
+childe cbt = 680 , turnAroundtime = 680 , waiting time 0 
+
+childe cbt = 898 , turnAroundtime = 905 , waiting time 5 
+
+childe cbt = 506 , turnAroundtime = 665 , waiting time 159 
+
+childe cbt = 439 , turnAroundtime = 600 , waiting time 157 
+
+childe cbt = 442 , turnAroundtime = 614 , waiting time 166 
+
+*** avg CBT = 657  , avg TT = 708 , avg WT = 48
+
+
+quantom 100
+childe cbt = 449 , turnAroundtime = 457 , waiting time 0 
+
+childe cbt = 339 , turnAroundtime = 418 , waiting time 79 
+
+childe cbt = 298 , turnAroundtime = 402 , waiting time 104 
+
+childe cbt = 310 , turnAroundtime = 424 , waiting time 114 
+
+childe cbt = 277 , turnAroundtime = 378 , waiting time 100 
+
+childe cbt = 466 , turnAroundtime = 505 , waiting time 39 
+
+childe cbt = 533 , turnAroundtime = 533 , waiting time 0 
+
+childe cbt = 517 , turnAroundtime = 518 , waiting time 0 
+
+childe cbt = 359 , turnAroundtime = 453 , waiting time 94 
+
+childe cbt = 339 , turnAroundtime = 443 , waiting time 104 
+
+***avg CBT = 388  , avg TT = 453 , avg WT = 63
+
+
+quantom 1000
+childe cbt = 369 , turnAroundtime = 387 , waiting time 18 
+
+childe cbt = 291 , turnAroundtime = 370 , waiting time 75 
+
+childe cbt = 411 , turnAroundtime = 411 , waiting time 0 
+
+childe cbt = 295 , turnAroundtime = 351 , waiting time 53 
+
+childe cbt = 248 , turnAroundtime = 347 , waiting time 99 
+
+childe cbt = 238 , turnAroundtime = 325 , waiting time 87 
+
+childe cbt = 287 , turnAroundtime = 346 , waiting time 59 
+
+childe cbt = 316 , turnAroundtime = 316 , waiting time 0 
+
+childe cbt = 449 , turnAroundtime = 449 , waiting time 0 
+
+childe cbt = 349 , turnAroundtime = 404 , waiting time 55 
+
+ ***avg CBT = 325  , avg TT = 370 , avg WT = 44
+
+
+quantom 10000
+childe cbt = 612 , turnAroundtime = 683 , waiting time 69 
+
+childe cbt = 386 , turnAroundtime = 517 , waiting time 131 
+
+childe cbt = 440 , turnAroundtime = 597 , waiting time 157 
+
+childe cbt = 407 , turnAroundtime = 548 , waiting time 141 
+
+childe cbt = 558 , turnAroundtime = 585 , waiting time 27 
+
+childe cbt = 450 , turnAroundtime = 548 , waiting time 98 
+
+childe cbt = 453 , turnAroundtime = 595 , waiting time 142 
+
+childe cbt = 640 , turnAroundtime = 721 , waiting time 73 
+
+childe cbt = 626 , turnAroundtime = 627 , waiting time 0 
+
+childe cbt = 671 , turnAroundtime = 670 , waiting time 0 
+
+** avg CBT = 524  , avg TT = 609 , avg WT = 83
+
+quantom 100000
+childe cbt = 652 , turnAroundtime = 653 , waiting time 0 
+
+childe cbt = 601 , turnAroundtime = 602 , waiting time 0 
+
+childe cbt = 612 , turnAroundtime = 612 , waiting time 0 
+
+childe cbt = 625 , turnAroundtime = 625 , waiting time 0 
+
+childe cbt = 680 , turnAroundtime = 682 , waiting time 0 
+
+childe cbt = 825 , turnAroundtime = 830 , waiting time 0 
+
+childe cbt = 666 , turnAroundtime = 673 , waiting time 0 
+
+childe cbt = 892 , turnAroundtime = 892 , waiting time 0 
+
+childe cbt = 400 , turnAroundtime = 528 , waiting time 126 
+
+childe cbt = 417 , turnAroundtime = 592 , waiting time 175 
+
+** avg CBT = 637  , avg TT = 668 , avg WT = 30
+
+
+quantom 250000
+childe cbt = 702 , turnAroundtime = 702 , waiting time 0 
+
+childe cbt = 645 , turnAroundtime = 646 , waiting time 0 
+
+childe cbt = 794 , turnAroundtime = 794 , waiting time 0 
+
+childe cbt = 739 , turnAroundtime = 744 , waiting time 0 
+
+childe cbt = 659 , turnAroundtime = 661 , waiting time 0 
+
+childe cbt = 644 , turnAroundtime = 643 , waiting time 0 
+
+childe cbt = 855 , turnAroundtime = 857 , waiting time 0 
+
+childe cbt = 737 , turnAroundtime = 737 , waiting time 0 
+
+childe cbt = 901 , turnAroundtime = 901 , waiting time 0 
+
+childe cbt = 613 , turnAroundtime = 615 , waiting time 0 
+
+***avg CBT = 728  , avg TT = 730 , avg WT = 0
+
+
+quantom 5000
+
+childe cbt = 637 , turnAroundtime = 642 , waiting time 0 
+
+childe cbt = 517 , turnAroundtime = 517 , waiting time 0 
+
+childe cbt = 556 , turnAroundtime = 564 , waiting time 0 
+
+childe cbt = 535 , turnAroundtime = 608 , waiting time 73 
+
+childe cbt = 336 , turnAroundtime = 395 , waiting time 59 
+
+childe cbt = 484 , turnAroundtime = 484 , waiting time 0 
+
+childe cbt = 504 , turnAroundtime = 616 , waiting time 112 
+
+childe cbt = 507 , turnAroundtime = 612 , waiting time 104 
+
+childe cbt = 509 , turnAroundtime = 573 , waiting time 64 
+
+childe cbt = 784 , turnAroundtime = 854 , waiting time 69 
+
+**avg CBT = 536  , avg TT = 586 , avg WT = 48
+
+
+
+------------------------best quantom 1000--------------------- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

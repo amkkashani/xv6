@@ -579,7 +579,7 @@ clockCounter(){
         if(p->state == SLEEPING){
           p->timeHandeler.sleepingTime++;
         }else if(p->state == RUNNABLE){
-          p->timeHandeler.runningTime++;
+          p->timeHandeler.readyTime++;
         }
         else if(p->state ==RUNNING ){
           p->timeHandeler.runningTime++;
