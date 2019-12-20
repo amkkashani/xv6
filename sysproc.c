@@ -169,9 +169,9 @@ int
 sys_waitForChild(void){
   struct timeVariables *ct;
   argptr (0 , (void*)&ct ,sizeof(*ct));
-  waitForChild(ct);
+  return waitForChild(ct);
   cprintf("%d",ct->readyTime);
-  return 1;
+  
 }
 
 

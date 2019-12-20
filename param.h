@@ -11,4 +11,4 @@
 #define LOGSIZE      (MAXOPBLOCKS*3)  // max data blocks in on-disk log
 #define NBUF         (MAXOPBLOCKS*3)  // size of disk block cache
 #define FSSIZE       1000  // size of file system in blocks
-#define QUANTUM      5000 //number of ticks that cpu must  wait on current procces
+#define QUANTUM      1000 //number of ticks that cpu must  wait on current procces
